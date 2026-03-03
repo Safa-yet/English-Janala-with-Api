@@ -14,11 +14,17 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Font Awsome -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
-      <nav class="navbar bg-[#badeff8f] shadow-sm flex justify-between ">
+      <nav class="navbar bg-[#badeff8f] shadow-sm flex justify-between">
         <!-- Toggle Box -->
         <div class="navbar-start md:hidden">
           <div class="dropdown">
@@ -42,64 +48,89 @@
               tabindex="-1"
               class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
             >
-              <li class="btn  btn-outline btn-primary "><i class="fa-solid fa-circle-question"></i> FAQ</li>
-            <li class="btn btn-outline btn-primary"><i class="fa-brands fa-leanpub"></i> Learn</li>
-            <li class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut</li>
+              <li class="btn btn-outline btn-primary">
+                <i class="fa-solid fa-circle-question"></i> FAQ
+              </li>
+              <li class="btn btn-outline btn-primary">
+                <i class="fa-brands fa-leanpub"></i> Learn
+              </li>
+              <li class="btn btn-outline btn-primary">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut
+              </li>
             </ul>
           </div>
         </div>
         <!-- Logo -->
         <a class="btn btn-ghost text-xl"
-          ><span>English</span><img src="assets/logo.png" alt="" /><span class="hind-font">জানালা</span>
+          ><span>English</span><img src="assets/logo.png" alt="" /><span
+            class="hind-font"
+            >জানালা</span
+          >
         </a>
 
         <!-- Button BOx -->
         <div class="navbar-end gap-4 hidden md:flex">
-            <button class="btn  btn-outline btn-primary "><i class="fa-solid fa-circle-question"></i> FAQ</button>
-            <button class="btn btn-outline btn-primary"><i class="fa-brands fa-leanpub"></i> Learn</button>
-            <button class="btn btn-outline btn-primary"><i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut</button>
-
+          <button class="btn btn-outline btn-primary">
+            <i class="fa-solid fa-circle-question"></i> FAQ
+          </button>
+          <button class="btn btn-outline btn-primary">
+            <i class="fa-brands fa-leanpub"></i> Learn
+          </button>
+          <button class="btn btn-outline btn-primary">
+            <i class="fa-solid fa-arrow-right-from-bracket"></i> LogOut
+          </button>
         </div>
       </nav>
     </header>
 
     <section>
-        <div class="container mx-auto flex-col-reverse md:flex-row flex items-center  gap-4 px-10 py-10">
-            <div class="hero-text flex-1 text-center md:text-left">
-                <h1 class="text-5xl font-bold mb-6"><span class="text-[#00BCFF]">English</span> is Easy!!</h1>
-                <p class="hind-font text-2xl">আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ</p>
+      <div
+        class="container mx-auto flex-col-reverse md:flex-row flex items-center gap-4 px-10 py-10"
+      >
+        <div class="hero-text flex-1 text-center md:text-left">
+          <h1 class="text-5xl font-bold mb-6">
+            <span class="text-[#00BCFF]">English</span> is Easy!!
+          </h1>
+          <p class="hind-font text-2xl">
+            আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা
+            আপনার দক্ষতা বাড়াতে চান, আমাদের Interactive Lessons আপনাকে নিয়ে যাবে
+            অন্য একটি Level এ
+          </p>
 
-                <form action="" class="space-y-2 mt-4">
-          <input type="email" class="input" placeholder="Enter Your Email" />
-          <input type="password" class="input" placeholder="Password" />
-          <div>
-
-              <button class="btn btn-primary  mt-3">Get Started</button>
-          </div>
-
-                </form>
-    
+          <form action="" class="space-y-2 mt-4">
+            <input type="email" class="input" placeholder="Enter Your Email" />
+            <input type="password" class="input" placeholder="Password" />
+            <div>
+              <button class="btn btn-primary mt-3">Get Started</button>
             </div>
-        
-            <div class="hero-img flex-1">
-    <img src="assets/hero-student.png" alt="">
-            </div>
-
-
+          </form>
         </div>
+
+        <div class="hero-img flex-1">
+          <img src="assets/hero-student.png" alt="" />
+        </div>
+      </div>
     </section>
-    
-    
+
     <section class="container mx-auto px-10 py-10">
-        <h1 class=" text-center text-4xl font-bold mb-6"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h1>
-<!-- Lesson Container  From Api -->
-        <div id="lesson-container" class="flex flex-wrap justify-center gap-4">
+      <h1 class="text-center text-4xl font-bold mb-6">
+        <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+      </h1>
+      <!-- Lesson Container  From Api -->
+      <div
+        id="lesson-container"
+        class="flex flex-wrap justify-center gap-4"
+      ></div>
 
+      <div id="word-container" class="grid grid-cols-3 my-5 gap-6">
+
+
+        <div class="bg-gray-200 col-span-full text-center space-y-5 py-12 hind-font">
+          <p class="text-xl font-semibold">আপনি এখনো কোন Lesson Select করেন ন</p>
+          <h2 class="text-4xl font-bold ">একটি Lesson Select করুন।</h2>
         </div>
-
+      </div>
     </section>
-
-
 
     <script src="script.js/app.js"></script>
   </body>
